@@ -1,0 +1,12 @@
+.departments .introText {
+  margin-bottom: 4rem;
+}
+
+.departments .imgContainer {
+  background: var(--clr-blue-200);
+  width: 100%;
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+}

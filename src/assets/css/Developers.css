@@ -1,0 +1,21 @@
+.developers {
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.devCard {
+  width: 12rem;
+  box-shadow: 5px 6px 0px #81ADC8;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 7px;
+  flex:none;
+}
+
+.devCard .imgContainer{
+    overflow: hidden;
+    border-radius: 7px;
+    background: lightgrey;
+    height: 10rem;
+}
+.devCard .content{}

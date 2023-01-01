@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+.heroContainer img {
+  transform: rotate(5deg) translate(-25%, 0%);
+}
+
+.introText {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+h1 {
+  font-size: var(--text-700);
+}
+
+.btnContainer {
+  margin-top: 2rem;
+}

@@ -1,0 +1,39 @@
+nav {
+  z-index: var(--index-5);
+  /* background: red; */
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  padding: .7rem 1rem;
+}
+.navLinks {
+  position: absolute;
+  top: -80%;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: var(--index-4);
+  transition: 0.35s ease;
+  /* height: 50%; */
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+.menuIcon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-50);
+}
+.showMenu {
+  top: 5rem !important;
+  left: 0 !important;
+}
+.link {
+  /* width: 100%; */
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: 500;
+}
+.link:hover {
+  background: var(--clr-gray-200);
+}

@@ -1,0 +1,26 @@
+.upcomingActivities {
+  padding: 1rem;
+}
+
+.upcomingCard {
+  width: 18rem;
+  height: 22rem;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  flex: none;
+}
+.upcomingCard .cardImage {
+  width: 100%;
+  height: 100%;
+  background: lightgrey;
+  overflow: hidden;
+  border-radius: 7px;
+  /* background:red; */
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

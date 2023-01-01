@@ -1,0 +1,28 @@
+.patrons{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.patrons .patronCard {
+  width: 20rem;
+  display: flex;
+  border: 1px solid black;
+  background: white;
+  border-radius: 7px;
+  flex: none;
+}
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+}
+.patronCard .imgContainer {
+  width: 100%;
+  background: lightgray;
+  padding: .2rem;
+}
+
+.patronCard .cardContent{
+    padding: 1rem;
+}
+
+

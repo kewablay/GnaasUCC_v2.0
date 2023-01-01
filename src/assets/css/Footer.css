@@ -1,0 +1,18 @@
+footer .logo {
+  font-size: 17px;
+}
+footer a {
+  color: black;
+}
+
+footer .socialLinks img {
+  width: 25px;
+  height: 25px; 
+}
+
+footer img:not(:last-child) {
+  margin-right: 0.5rem;
+}
+footer .flex-col {
+  justify-content: flex-start;
+}

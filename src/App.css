@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+/* Global styling */
+
+body {
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* global styling */
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  /* large = 38px
+  titles = 25px
+  base = 15px
+  small = 10px
+  very-small = 9px; */
+
+  /* colors */
+  --clr-blue-700: #3357e7;
+  --clr-blue-200: #81adc8;
+  --clr-blue-100: #edf3f7;
+  --clr-secondary: #f7ede8;
+
+  /* font-sizes  */
+  --text-700: 38px;
+  --text-400: 15px;
+  --text-300: 12px;
+  --text-200: 10px;
+  --text-100: 9px;
+
+  /* spacing  */
+  --space-50: 0.5rem;
+  --space-100: 1rem;
+  --space-200: 2rem;
+  --space-300: 3rem;
+  --space-400: 4rem;
+  --space-500: 5rem;
+  --space-600: 6rem;
+
+  /* z-index */
+  --index-1: 1;
+  --index-2: 2;
+  --index-3: 3;
+  --index-4: 4;
+  --index-5: 5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapContent {
+  max-width: 1600px;
+  margin: auto;
+}
+.bg-primary {
+  background: var(--clr-blue-100);
+}
+.bg-secondary {
+  background: var(--clr-secondary);
+}
+.flex {
+  display: flex;
+}
+.flex-col {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+}
+.flex-center {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.text-400 {
+  font-size: var(--text-400);
+}
+.text-300 {
+  font-size: var(--text-300);
+}
+.text-200 {
+  font-size: var(--text-200);
+}
+.text-100 {
+  font-size: var(--text-100);
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.mb-3{
+  margin-bottom: var(--space-300);
+}
+.mb-4 {
+  margin-bottom: var(--space-400);
+}
+.py-3 {
+  padding: var(--space-300) 0;
+}
+.py-4 {
+  padding: var(--space-300) 0 var(--space-500) 0;
+}
+.pt-3 {
+  padding: var(--space-300) 0 0 0;
+}
+.scroll-x {
+  overflow-x: scroll !important;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.title {
+  /* text-align: center; */
+  margin: auto;
+  width: fit-content;
+  position: relative;
+  font-weight: 600;
+  margin-bottom: var(--space-200);
+}
+.title #spark {
+  position: absolute;
+  top: -12px;
+  left: -22px;
+  z-index: var(--index-2);
+}
+.title::before {
+  content: " ";
+  position: absolute;
+  bottom: -6.5px;
+  left: 1px;
+  width: 30px;
+  border-radius: 20px;
+  background: var(--clr-blue-700);
+  height: 3px;
+  z-index: var(--index-2);
 }
 
-.App-link {
-  color: #61dafb;
+/* @media (min-width: 567px){
+  :root {
+    --text-700: 38px;
+    --text-400: 15px;
+    --text-300: 10px;
+    --text-200: 9px;
+  }
+} */
+
+/* h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;} */
+
+/* component class */
+.btn {
+  font-family: "Montserrat Alternates", sans-serif;
+  border: 1px solid #ffffff;
+  box-shadow: 4px 4px 0px #81adc8;
+  border-radius: 3px;
+  padding: 0.7rem 1rem;
+  font-size: var(--text-400);
+}
+.btn span {
+  padding-left: 0.3rem;
+}
+.btnVar {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: var(--text-100);
+  color: black;
+  position: relative;
+  padding: 0.2rem 0.5rem;
+  padding-left: 0;
+  display: inline-flex;
+  align-items: center;
+}
+.btnVar:hover:after {
+  width: 100%;
+}
+.btnVar::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+
+  width: 30%;
+  height: 100%;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+.btnVar2 {
+  padding: 0.3rem 0.5rem;
+}
+.btnVar1::after {
+  right: 0;
+  border-width: 1px 1px 1px 0px;
+  box-shadow: 4px 4px 0px #81adc8;
+}
+.btnVar1 span {
+  margin-right: 0.5rem;
+}
+.btnVar2 span {
+  margin-left: 0.2rem;
+}
+.btnVar2::after {
+  left: 0;
+  border-width: 1px 0px 1px 1px;
+  box-shadow: -4px 4px 0px #81adc8;
 }

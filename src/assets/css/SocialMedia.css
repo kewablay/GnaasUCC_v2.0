@@ -1,0 +1,39 @@
+.socialMedia {
+  overflow: hidden;
+  /* height: 37rem; */
+}
+.socialIcons .header {
+  padding: 1rem;
+}
+.socialMedia .info {
+  text-align: center;
+}
+
+.socialIcons {
+  margin: auto;
+  width: fit-content;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.socialIcons #arrow {
+  position: absolute;
+  top: -25px;
+  right: -60px;
+  transform: rotate(15deg);
+}
+
+.socialIcons img {
+  margin-right: 1rem;
+}
+.mockup1 {
+  transform: translate(-15%, 15%);
+  width: fit-content;
+  /* margin-top: 2rem; */
+}
+.mockup1 img{
+  width: 120%;
+}
+.mockup2 {
+  display: none;
+}

@@ -1,0 +1,14 @@
+.locateUs .content {
+    padding: 1rem;
+}
+.locateUs  p {
+  text-align: center;
+}
+
+.locateUs .map {
+  width: 100%;
+  height: 20rem;
+  background: lightgray;
+  border: 1px solid black;
+  border-width: 1px 0 1px 0;
+}
