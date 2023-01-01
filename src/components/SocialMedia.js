@@ -20,9 +20,15 @@ function SocialMedia() {
           subscribe for more updates on the fellowship.
         </p>
         <div className="socialIcons">
-          <img src={facebook} alt="facebook" />
-          <img src={twitter} alt="twitter" />
-          <img src={instagram} alt="instagram" />
+          <a href="#">
+            <img src={facebook} alt="facebook" />
+          </a>
+          <a href="#">
+            <img src={twitter} alt="twitter" />
+          </a>
+          <a href="#">
+            <img src={instagram} alt="instagram" />
+          </a>
           <img id="arrow" src={curvedArrow} alt="arrow" />
         </div>
       </div>

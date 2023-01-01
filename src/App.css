@@ -112,7 +112,7 @@ button {
 .gap-2 {
   gap: 2rem;
 }
-.mb-3{
+.mb-3 {
   margin-bottom: var(--space-300);
 }
 .mb-4 {
@@ -247,4 +247,14 @@ small, .text_small {font-size: 0.8rem;} */
   left: 0;
   border-width: 1px 0px 1px 1px;
   box-shadow: -4px 4px 0px #81adc8;
+}
+
+/* large screen sizes */
+@media (min-width: 992px) {
+  :root {
+    --text-400: 18px;
+  }
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }

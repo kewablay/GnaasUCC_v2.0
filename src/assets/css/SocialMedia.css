@@ -31,9 +31,44 @@
   width: fit-content;
   /* margin-top: 2rem; */
 }
-.mockup1 img{
+.mockup1 img {
   width: 120%;
 }
 .mockup2 {
   display: none;
+}
+
+/* large screen sizes */
+@media (min-width: 992px) {
+  .socialMedia {
+    /* overflow: hidden; */
+    height: 38rem;
+  }
+  .socialMedia {
+    position: relative;
+  }
+  .socialMedia .content {
+    padding-top: 3rem;
+  }
+  .socialMedia .info {
+    max-width: 25rem;
+    margin: auto;
+  }
+  .mockup1 {
+    transform: translate(-10%, -10%);
+    margin-top: 1rem
+  }
+  .mockup2 {
+    display: initial;
+    position: absolute;
+    top: 10%;
+    /* right: calc(-2vw + -50%); */
+    right: -50%;
+  }
+  .mockup1 img {
+    width: 118%;
+  }
+  .mockup2 img {
+    width: 70%;
+  }
 }

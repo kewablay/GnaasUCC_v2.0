@@ -28,3 +28,11 @@
 .cardInfo {
   font-size: var(--text-300);
 }
+
+
+/* large screen sizes */
+@media (min-width: 992px) {
+  .lg-center{
+    justify-content: center;
+  }
+}

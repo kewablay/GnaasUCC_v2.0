@@ -2,7 +2,9 @@
   padding: 1rem;
   gap: 2rem;
 }
-
+.devContainer{
+  padding: .5rem;
+}
 .devCard {
   width: 12rem;
   box-shadow: 5px 6px 0px #81ADC8;
@@ -17,5 +19,10 @@
     border-radius: 7px;
     background: lightgrey;
     height: 10rem;
+    /* width: 100%; */
+}
+.imgContainer img {
+  width: 100%;
+  height: 100%;
 }
 .devCard .content{}

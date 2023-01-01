@@ -9,7 +9,7 @@ function Patrons() {
   return (
     <div className="patrons bg-secondary py-4 mb-4">
       <Title text="Patrons" />
-      <div className="cardContainer flex scroll-x hide-scrollbar gap-1">
+      <div className="cardContainer lg-center flex scroll-x hide-scrollbar gap-1">
         <PatronCard
           name={"Pastor Professor Y. A Ankomah"}
           desc={"Main Patron and a professor in the university of capecoast"}

@@ -1,11 +1,19 @@
 .upcomingActivities {
   padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  border: 0.5px solid lightgray;
+  border-width: 1px 0px 1px 0px;
+  background: linear-gradient(white, whitesmoke, white, whitesmoke);
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 .upcomingCard {
   width: 18rem;
   height: 22rem;
   padding: 0.5rem;
+  background-color: white;
   border: 1px solid grey;
   border-radius: 10px;
   flex: none;

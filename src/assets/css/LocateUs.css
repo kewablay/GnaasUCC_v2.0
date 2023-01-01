@@ -1,7 +1,7 @@
 .locateUs .content {
-    padding: 1rem;
+  padding: 1rem;
 }
-.locateUs  p {
+.locateUs p {
   text-align: center;
 }
 
@@ -11,4 +11,31 @@
   background: lightgray;
   border: 1px solid black;
   border-width: 1px 0 1px 0;
+}
+
+/* large screen sizes */
+@media (min-width: 992px) {
+  .locateUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .locateUs .title {
+    margin-left: 0;
+  }
+  .locateUs .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content p {
+    text-align: left;
+    max-width: 20rem;
+  }
+  .locateUs .map {
+    flex-basis: 50%;
+    height: 38rem;
+  }
 }

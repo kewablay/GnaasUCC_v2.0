@@ -2,6 +2,11 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 2.7%,
+    #ffe8d3 30.05%
+  );
 }
 .heroContainer img {
   transform: rotate(5deg) translate(-25%, 0%);
@@ -18,4 +23,34 @@ h1 {
 
 .btnContainer {
   margin-top: 2rem;
+}
+
+/* large screen sizes */
+@media (min-width: 992px) {
+  /* heading styling  */
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+      89.9deg,
+      rgba(255, 255, 255, 0) 2.7%,
+      #ffe8d3 30.05%
+    );
+  }
+  .heroContainer {
+    height: 125%;
+    width: 60%;
+  }
+  .heroContainer img {
+    transform: rotate(3deg) translate(5%, -2%);
+    height: 100%;
+  }
+  .introText {
+    text-align: left;
+    padding: 1rem;
+    max-width: 20rem;
+  }
 }

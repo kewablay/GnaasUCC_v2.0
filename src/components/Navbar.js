@@ -1,13 +1,15 @@
-import React from "react";
-import '../assets/css/Navbar.css'
+import React, { useState } from "react";
+import "../assets/css/Navbar.css";
 import MenuIcon from "../assets/icons/menu.png";
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav class="flex flex-between">
       <div className="logo">GNAASUCC</div>
 
-      <div className="navLinks">
+      <div className={`navLinks ${showMenu && "showMenu"}`}>
         <a href="#" class="link">
           Gallery
         </a>
@@ -25,7 +27,7 @@ function Navbar() {
         </a>
       </div>
 
-      <button className="menuIcon">
+      <button className="menuIcon" onClick={() => setShowMenu(!showMenu)}>
         <img src={MenuIcon} alt="menu" />
       </button>
     </nav>

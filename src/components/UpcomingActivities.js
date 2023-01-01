@@ -9,7 +9,7 @@ function UpcomingActivities() {
   return (
     <div className="upcomingActivities mb-4">
       <Title text={"Upcoming Activities"} />
-      <div className="activitiesContainer flex scroll-x hide-scrollbar gap-1">
+      <div className="activitiesContainer lg-center flex scroll-x hide-scrollbar gap-1">
         <UpcomingCard img={activity1} />
         <UpcomingCard img={activity1} />
         <UpcomingCard img={activity1} />
