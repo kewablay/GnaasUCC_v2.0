@@ -11,8 +11,13 @@
   height: 100%;
 }
 
-/* large screen sizes */
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
+  .departments .image {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
   .departments {
     display: flex;
     flex-direction: row-reverse;
@@ -25,6 +30,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .departments .introText {
+    text-align: left;
   }
   .introText .title {
     margin-left: 0;

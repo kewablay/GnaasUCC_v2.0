@@ -1,3 +1,10 @@
+.socialMedia .content{
+  padding: 1rem;
+}
+.socialMedia .info {
+  max-width: 25rem;
+  margin: auto;
+}
 .socialMedia {
   overflow: hidden;
   /* height: 37rem; */
@@ -29,6 +36,7 @@
 .mockup1 {
   transform: translate(-15%, 15%);
   width: fit-content;
+  margin: auto;
   /* margin-top: 2rem; */
 }
 .mockup1 img {
@@ -36,6 +44,33 @@
 }
 .mockup2 {
   display: none;
+}
+
+/* @media (min-width: 992px) and (max-width: 1128px) {
+  .mockup1 {
+    transform: translate(-20%, -10%);
+    margin-top: 1rem;
+  }
+  .mockup2 {
+    display: initial;
+    position: absolute;
+    top: 10%;
+    right: -65%;
+  }
+}
+@media (min-width: 1128px) {
+  .mockup1 {
+    transform: translate(-10%, -10%);
+  }
+  .mockup2 {
+    right: -50%;
+  }
+}*/
+
+@media (min-width: 1200px) {
+  .mockup2 {
+    right: -45% !important;
+  }
 }
 
 /* large screen sizes */
@@ -50,20 +85,18 @@
   .socialMedia .content {
     padding-top: 3rem;
   }
-  .socialMedia .info {
-    max-width: 25rem;
-    margin: auto;
-  }
+  
   .mockup1 {
-    transform: translate(-10%, -10%);
-    margin-top: 1rem
+    transform: translate(-15%, -10%);
+    margin: 0;
+    margin-top: 1rem;
   }
   .mockup2 {
     display: initial;
     position: absolute;
     top: 10%;
-    /* right: calc(-2vw + -50%); */
-    right: -50%;
+    /* right: -40%; */
+    right: min(-40%, -63%);
   }
   .mockup1 img {
     width: 118%;

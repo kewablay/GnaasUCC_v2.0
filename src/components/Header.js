@@ -14,7 +14,7 @@ function Header() {
 
       <div className="introText">
         <h1>WELCOME TO GNAAS UCC</h1>
-        <p>
+        <p className="text-400">
           A place of peace, love and hope restoration. A family where you can
           grow your faith in Christ.
         </p>

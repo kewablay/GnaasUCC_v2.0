@@ -2,19 +2,23 @@
   padding: 0 1rem;
 }
 .weeklyActContainer {
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .card {
   padding: 1.5rem;
   /* border: 1px solid lightgray; */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border-bottom: 5px solid green;
+  border-bottom: 5px solid var(--clr-blue-100);
   width: 10rem;
   align-items: flex-start !important;
   border-radius: 15px;
   flex: none;
   text-align: center;
+  transition: all .2s ease;
+}
+.card:hover{
+  border-color:rgb(61, 61, 61);
 }
 .card .icon {
   width: 100%;

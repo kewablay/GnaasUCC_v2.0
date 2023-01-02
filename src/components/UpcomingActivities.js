@@ -7,7 +7,7 @@ import UpcomingCard from "./UpcomingCard";
 
 function UpcomingActivities() {
   return (
-    <div className="upcomingActivities mb-4">
+    <div className="upcomingActivities bg-primary mb-4">
       <Title text={"Upcoming Activities"} />
       <div className="activitiesContainer lg-center flex scroll-x hide-scrollbar gap-1">
         <UpcomingCard img={activity1} />
