@@ -1,0 +1,41 @@
+.eventsContainer {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.eventCard {
+  /* height: rem; */
+  border: 0.5px solid gray;
+  padding: 0.6rem;
+  gap: 0rem 1rem;
+  border-radius: 7px;
+}
+.eventImg {
+  /* height: 8rem; */
+  flex-basis: 45%;
+  border-radius: 7px;
+  background: lightgray;
+  overflow: hidden;
+  margin-block: auto;
+}
+.eventImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.eventContent {
+  display: flex;
+  flex-direction: column;
+}
+.eventContent .cardButtom {
+  margin-top: auto;
+}
+.eventContent .status {
+  margin: 0;
+}
+.fbLive span {
+  margin-right: 0.4rem;
+}

@@ -30,6 +30,7 @@ button {
 
   /* font-sizes  */
   --text-700: 38px;
+  --text-500: 21px;
   --text-400: 15px;
   --text-300: 12px;
   --text-200: 10px;
@@ -51,7 +52,6 @@ button {
   --index-4: 4;
   --index-5: 5;
 }
-
 .wrapContent {
   max-width: 1600px;
   margin: auto;
@@ -96,6 +96,9 @@ button {
 }
 .text-400 {
   font-size: var(--text-400);
+}
+.text-500 {
+  font-size: var(--text-500);
 }
 .text-300 {
   font-size: var(--text-300);

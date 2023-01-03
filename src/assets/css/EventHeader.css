@@ -1,0 +1,33 @@
+.eventHeader {
+  width: 95%;
+  height: 70vh;
+  max-height: 80vh;
+  /* padding: 1rem; */
+  border-radius: 10px;
+  background: black;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  margin-inline: auto;
+  background: center/cover url(../images/event-hero-img.png);
+}
+
+.headerContent {
+  padding: 2rem;
+  padding-top: 3rem;
+  background: linear-gradient(
+    179.59deg,
+    rgba(31, 30, 30, 0) 1.59%,
+    rgba(31, 30, 30, 0.84) 31.06%
+  );
+}
+
+.headerContent {
+  font-weight: light;
+}
+
+.headerContent p {
+  line-height: 139%;
+  /* max-width: 40rem; */
+}

@@ -8,7 +8,7 @@ import Alfred from "../assets/images/Alfred.png";
 
 function Developers() {
   return (
-    <div className="developers mb-4">
+    <div id="developers" className="developers mb-4">
       <Title text="Developers" />
       <div className="devContainer lg-center flex scroll-x hide-scrollbar gap-2">
         <DevCard

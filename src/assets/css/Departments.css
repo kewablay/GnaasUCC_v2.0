@@ -1,3 +1,11 @@
+.departments{
+  position: relative;
+}
+.departments #coil{
+  position: absolute;
+  top: -9%;
+  right: 0rem;
+}
 .departments .introText {
   margin-bottom: 4rem;
 }

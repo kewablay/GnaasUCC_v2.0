@@ -1,28 +1,17 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import WeeklyActivities from "./components/WeeklyActivities";
-import UpcomingActivities from "./components/UpcomingActivities";
-import Departments from "./components/Depatments";
-import Patrons from "./components/Patrons";
-import LocateUs from "./components/LocateUs";
-import SocialMedia from "./components/SocialMedia";
-import Developers from "./components/Developers";
-import Footer from "./components/Footer";
+import Homepage from "./pages/Front/Homepage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import EventsPage from "./pages/Front/EventsPage";
 
 function App() {
   return (
     <div className="App wrapContent">
-      <Navbar />
-      <Header />
-      <WeeklyActivities />
-      <UpcomingActivities />
-      <Departments />
-      <Patrons />
-      <LocateUs />
-      <SocialMedia />
-      <Developers />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/events" element={<EventsPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -12,7 +12,7 @@ import mockup2 from "../assets/images/mockup2.png";
 
 function SocialMedia() {
   return (
-    <div className="socialMedia mb-4 bg-primary pt-3">
+    <div id="contact-us" className="socialMedia mb-4 bg-primary pt-3">
       <div className="content">
         <Title text="Social Media" />
         <p className="info text-400">

@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Button({ text, icon, color, bg }) {
+function Button({ text, icon, color, bg, link }) {
   return (
     <div className="btnContainer">
-      <a href="#" className="btn" style={{ color: color, background: bg }}>
+      <Link to={link} className="btn" style={{ color: color, background: bg }}>
         {text}
         <span className="btnIcon">
           <img src={icon} alt="icon" />
         </span>
-      </a>
+      </Link>
     </div>
   );
 }

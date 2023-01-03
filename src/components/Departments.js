@@ -2,13 +2,15 @@ import React from "react";
 import "../assets/css/Departments.css";
 
 import departmentImg from "../assets/images/departmentsImg.png";
+import Button from "./Button";
+import Title from "./Title";
 import Arrow from "../assets/icons/arrow-black.png";
-import Button from "../components/Button";
-import Title from "../components/Title";
+import coilIcon from "../assets/icons/coil.png";
 
 function Depatments() {
   return (
-    <div className="departments mb-4 py-3">
+    <div id="departments" className="departments mb-4 py-3">
+      <img id="coil" src={coilIcon} alt="." />
       <div className="introContainer">
         <div className="introText">
           <Title text="Departments" />

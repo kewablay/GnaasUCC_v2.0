@@ -1,30 +1,34 @@
 import React, { useState } from "react";
 import "../assets/css/Navbar.css";
 import MenuIcon from "../assets/icons/menu.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <nav class="flex flex-between">
-      <div className="logo">GNAASUCC</div>
+      <div className="logo">
+        <Link to="/">GNAASUCC</Link>
+      </div>
 
       <div className={`navLinks ${showMenu && "showMenu"}`}>
-        <a href="#" class="link">
-          Gallery
-        </a>
-        <a href="#services" class="link">
+        <Link class="link" to="/events">
           Events
-        </a>
-        <a href="#products" class="link">
+        </Link>
+        <Link class="link" to="/#gallery">
+          Gallery
+        </Link>
+
+        <Link class="link" to="/#departments">
           Departments
-        </a>
-        <a href="#about" class="link">
+        </Link>
+        <Link class="link" to="/#about-us">
           About Us
-        </a>
-        <a href="#contact" class="link">
+        </Link>
+        <Link class="link" to="/#contact-us">
           Contact Us
-        </a>
+        </Link>
       </div>
 
       <button className="menuIcon" onClick={() => setShowMenu(!showMenu)}>

@@ -23,6 +23,7 @@ function Header() {
           color={"white"}
           bg={"black"}
           icon={ArrowWhite}
+          link={"/events"}
         />
       </div>
     </div>
