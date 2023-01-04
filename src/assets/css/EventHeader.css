@@ -2,6 +2,7 @@
   width: 95%;
   height: 70vh;
   max-height: 80vh;
+  margin-top: 0.5rem;
   /* padding: 1rem; */
   border-radius: 10px;
   background: black;
@@ -30,4 +31,31 @@
 .headerContent p {
   line-height: 139%;
   /* max-width: 40rem; */
+}
+
+@media (min-width: 562px) {
+  .eventHeader {
+    /* --text-500: 30px;
+    --text-300: 18px; */
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .eventHeader {
+    --text-500: 24px;
+    --text-300: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .eventHeader {
+    --text-500: 30px;
+    --text-300: 17px;
+  }
+}
+@media (min-width: 1400px) {
+  .eventHeader {
+    max-height: 45rem;
+  }
 }

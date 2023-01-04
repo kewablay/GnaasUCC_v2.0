@@ -1,8 +1,15 @@
+.autoGrid {
+  --auto-grid-min-size: 15rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1.5rem;
+}
+
 .eventsContainer {
   padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
 }
 
 .eventCard {
@@ -18,7 +25,7 @@
   border-radius: 7px;
   background: lightgray;
   overflow: hidden;
-  margin-block: auto;
+  /* margin-block: auto; */
 }
 .eventImg img {
   width: 100%;
@@ -29,13 +36,33 @@
 .eventContent {
   display: flex;
   flex-direction: column;
-}
-.eventContent .cardButtom {
-  margin-top: auto;
+  justify-content: space-between;
+  flex-basis: 70%;
 }
 .eventContent .status {
   margin: 0;
 }
 .fbLive span {
   margin-right: 0.4rem;
+}
+
+@media (min-width: 536px) {
+  .eventCard {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .eventImg {
+    flex-basis: 54%;
+  }
+  .eventContent {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 562px) {
+  .eventsContainer {
+    max-width: 90%;
+    margin-inline: auto;
+  }
 }
